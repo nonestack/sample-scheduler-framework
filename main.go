@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/cnych/sample-scheduler-framework/pkg/plugins"
+	"sample-scheduler-framework/pkg/plugins"
 	"k8s.io/component-base/logs"
 	"k8s.io/kubernetes/cmd/kube-scheduler/app"
 	"math/rand"
