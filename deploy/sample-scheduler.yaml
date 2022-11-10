@@ -138,10 +138,9 @@ roleRef:
   kind: ClusterRole
   name: sample-scheduler-clusterrole
 subjects:
-  - kind: ServiceAccount
-    name: sample-scheduler-sa
-    namespace: kube-system
-
+- kind: ServiceAccount
+  name: sample-scheduler-sa
+  namespace: kube-system
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -164,12 +163,6 @@ data:
       filter:
         enabled:
         - name: "sample-plugin"
-      score:
-        enabled:
-        - name: "sample-plugin" 
-      normalizeScore    
-        enabled:
-        - name: "sample-plugin"        
       preBind:
         enabled:
         - name: "sample-plugin"
